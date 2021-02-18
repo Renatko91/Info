@@ -1,0 +1,20 @@
+1)  CREATE DATABASE dev_db;                                                     - создание базы данных
+2)  DROP DATABASE developers;                                                   - удаление базы данных
+3)  CREATE TABLE developers {                                                   - создание таблицы
+      id INT,
+      name VARCHAR(50)
+    }
+4)  DROP TABLE developers;                                                      - удаление таблицы
+5)  INSERT INTO developers (id INT, name VARCHAR(50)) VALUES (1, 'Sam');        - добавление записи в таблиу
+6)  SELECT * FROM developers;                                                   - получение всех записей
+7)  SELECT id, name FROM developers WHERE specialty LIKE '%java%';              - получение конкретной записи
+8)  UPDATE developers SET salary = 3000 WHERE specialty LIKE '%java%';          - редактирование записи
+9)  DELETE FROM developers WHERE name = 'PETER';                                - удаление запси
+10) ALTER TABLE developers ADD location varchar(30);                            - изменить таблицу, добавить поле в таблицу
+    ALTER TABLE developers DROP location;                                       - удалить поле
+    ALTER TABLE developers CHANGE location address varchar(30);                 - изменить название поля location на address
+11) TRUNCATE                                                                    - удаление всех данных из таблицы
+12) GRANT                                                                       - предоставить права
+13) REVOKE                                                                      - отозвать права
+14) JOIN                                                                        - соединение таблиц
+15) GetDate                                                                     - возвращать текущий timestamp/дату
